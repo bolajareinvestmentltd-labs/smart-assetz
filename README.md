@@ -21,7 +21,23 @@ Nigeria's Premium Property & Partner Ecosystem — Demo
 - **TypeScript**
 - **Lucide Icons**
 
-## Getting Started
+## Deployment Setup
+
+This project is designed to run on Vercel without needing live local edits after deployment.
+
+### Required Vercel environment variables
+
+Set these in your Vercel project dashboard under Settings → Environment Variables:
+
+```env
+NEXT_PUBLIC_APP_URL=https://your-demo-app.vercel.app
+NEXT_PUBLIC_PARTNER_PORTAL_URL=https://your-partner-app.vercel.app
+NEXT_PUBLIC_API_BASE_URL=https://your-api-domain.com
+```
+
+Use live production URLs in Vercel. Do not use local host URLs for production.
+
+### Local development
 
 ```bash
 npm install
